@@ -1,8 +1,8 @@
-package io.nerdbyteslns.productcatalogservice.utils;
+package io.nerdbyteslns.nerdcommercecore.utils;
 
-import io.nerdbyteslns.productcatalogservice.enums.DefaultHttpMessages;
-import io.nerdbyteslns.productcatalogservice.models.ErrorDetails;
-import io.nerdbyteslns.productcatalogservice.models.reponses.ApiResponse;
+import io.nerdbyteslns.nerdcommercecore.enums.DefaultHttpMessages;
+import io.nerdbyteslns.nerdcommercecore.models.ErrorDetails;
+import io.nerdbyteslns.nerdcommercecore.models.reponses.ApiResponse;
 import org.springframework.http.HttpStatus;
 
 import java.util.List;

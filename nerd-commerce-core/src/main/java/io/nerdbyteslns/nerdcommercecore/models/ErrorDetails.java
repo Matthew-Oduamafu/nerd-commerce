@@ -1,4 +1,4 @@
-package io.nerdbyteslns.productcatalogservice.models;
+package io.nerdbyteslns.nerdcommercecore.models;
 
 
 

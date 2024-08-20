@@ -1,6 +1,6 @@
-package io.nerdbyteslns.productcatalogservice.models.reponses;
+package io.nerdbyteslns.nerdcommercecore.models.reponses;
 
-import io.nerdbyteslns.productcatalogservice.models.ErrorDetails;
+import io.nerdbyteslns.nerdcommercecore.models.ErrorDetails;
 import lombok.*;
 
 import java.util.List;

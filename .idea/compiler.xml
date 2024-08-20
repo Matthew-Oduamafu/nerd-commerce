@@ -2,17 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product-catalog-service" />
+        <module name="shopping-cart-service" />
+        <module name="nerd-commerce-core" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nerd-commerce-core" options="-parameters" />
       <module name="product-catalog-service" options="-parameters" />
+      <module name="shopping-cart-service" options="-parameters" />
     </option>
   </component>
 </project>

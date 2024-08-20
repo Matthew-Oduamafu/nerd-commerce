@@ -1,4 +1,4 @@
-package io.nerdbyteslns.productcatalogservice.enums;
+package io.nerdbyteslns.nerdcommercecore.enums;
 
 public enum DefaultHttpMessages {
     SUCCESS("Success"),
@@ -6,7 +6,7 @@ public enum DefaultHttpMessages {
     ACCEPTED("Accepted"),
     BAD_REQUEST("Bad Request"),
     FAILED_DEPENDENCY("Failed Dependency"),
-    NOT_FOUND("Not Found"),
+    NOT_FOUND("Resource Not Found"),
     INTERNAL_SERVER_ERROR("Internal Server Error"),
     UNAUTHORIZED("Unauthorized"),
     FORBIDDEN("Forbidden"),
