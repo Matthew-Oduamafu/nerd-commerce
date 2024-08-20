@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -17,7 +18,6 @@ import java.util.List;
 public class Category {
 
     @Id
-    @GeneratedValue(generator = "uuid")
     private String id;
     private String name;
     private String description;
@@ -26,6 +26,6 @@ public class Category {
     @JsonIgnore
     private List<Product> products;
 
-    private String createdAt;
-    private String updatedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
