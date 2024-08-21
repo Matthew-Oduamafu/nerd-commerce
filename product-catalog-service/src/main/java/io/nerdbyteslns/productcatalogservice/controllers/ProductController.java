@@ -1,6 +1,7 @@
 package io.nerdbyteslns.productcatalogservice.controllers;
 
 
+import io.nerdbyteslns.nerdcommercecore.controllers.BaseController;
 import io.nerdbyteslns.nerdcommercecore.models.reponses.ApiResponse;
 import io.nerdbyteslns.productcatalogservice.dtos.requests.CreateProductDto;
 import io.nerdbyteslns.productcatalogservice.dtos.responses.ProductResponseDto;

@@ -1,4 +1,4 @@
-package io.nerdbyteslns.productcatalogservice.controllers;
+package io.nerdbyteslns.nerdcommercecore.controllers;
 
 import io.nerdbyteslns.nerdcommercecore.models.reponses.ApiResponse;
 import lombok.RequiredArgsConstructor;
