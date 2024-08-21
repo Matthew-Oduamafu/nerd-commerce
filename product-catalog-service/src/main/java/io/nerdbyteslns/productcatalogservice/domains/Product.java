@@ -1,7 +1,6 @@
 package io.nerdbyteslns.productcatalogservice.domains;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.*;
@@ -20,7 +19,6 @@ import java.time.LocalDateTime;
 public class Product {
 
     @Id
-    @GeneratedValue(generator = "uuid")
     private String id;
     private String name;
     private String description;
