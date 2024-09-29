@@ -12,6 +12,7 @@
         <module name="shopping-cart-service" />
         <module name="nerd-commerce-core" />
       </profile>
+      <profile name="NewProfile" enabled="true" />
     </annotationProcessing>
   </component>
   <component name="JavacSettings">

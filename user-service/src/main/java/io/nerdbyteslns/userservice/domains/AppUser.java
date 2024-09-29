@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -35,4 +36,25 @@ public class AppUser {
     private List<UserRole> roles;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    public void addRole(UserRole role){
+        if(roles == null){
+            roles = new ArrayList<>();
+        }
+        this.roles.add(role);
+    }
+
+    public void removeRole(UserRole role){
+        if(roles == null){
+            return;
+        }
+        this.roles.remove(role);
+    }
+
+    public UserRole getRole(String roleId){
+        if(roles == null){
+            return null;
+        }
+        return this.roles.stream().filter(r -> r.getId().equalsIgnoreCase(roleId)).findFirst().orElse(null);
+    }
 }

@@ -15,4 +15,9 @@ public interface AppUserService {
     ApiResponse<AppUserFullResponseDto> getUserFullDetailsByEmail(String email);
     ApiResponse<AppUserResponseDto> deleteUser(String id);
 
+    // add role to a user
+    ApiResponse<AppUserFullResponseDto> addRoleToUser(String userId, String roleId);
+    // remove a role from a user
+    ApiResponse<AppUserFullResponseDto> removeRoleFromUser(String userId, String roleId);
+
 }

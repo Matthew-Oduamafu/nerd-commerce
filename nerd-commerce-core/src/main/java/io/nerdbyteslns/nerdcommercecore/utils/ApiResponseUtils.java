@@ -51,6 +51,12 @@ public class ApiResponseUtils {
         return ApiResponseUtils.toApiResponse(DefaultHttpMessages.NOT_FOUND.getMessage(), false, HttpStatus.NOT_FOUND.value(), null, null);
     }
 
+
+    // notFoundApiResponse
+    public static <T> ApiResponse<T> notFoundApiResponse(String message) {
+        return ApiResponseUtils.toApiResponse(message, false, HttpStatus.NOT_FOUND.value(), null, null);
+    }
+
     // internalServerErrorApiResponse
     public static <T> ApiResponse<T> internalServerErrorApiResponse() {
         return ApiResponseUtils.toApiResponse(DefaultHttpMessages.INTERNAL_SERVER_ERROR.getMessage(), false, HttpStatus.INTERNAL_SERVER_ERROR.value(), null, null);
