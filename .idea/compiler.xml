@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
         <module name="product-catalog-service" />
         <module name="shopping-cart-service" />
         <module name="nerd-commerce-core" />
       </profile>
+      <profile name="NewProfile" enabled="true" />
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
@@ -18,6 +20,7 @@
       <module name="nerd-commerce-core" options="-parameters" />
       <module name="product-catalog-service" options="-parameters" />
       <module name="shopping-cart-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
